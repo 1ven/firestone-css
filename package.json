@@ -1,0 +1,25 @@
+{
+  "name": "firestone-css",
+  "version": "0.0.1",
+  "description": "UI components CSS kit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ven/firestone-css.git"
+  },
+  "keywords": [
+    "CSS",
+    "kit",
+    "ui",
+    "framework",
+    "firestone"
+  ],
+  "author": "1ven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ven/firestone-css/issues"
+  },
+  "homepage": "https://github.com/1ven/firestone-css#readme"
+}
