@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/1ven/firestone-css/issues"
   },
-  "homepage": "https://github.com/1ven/firestone-css#readme"
+  "homepage": "https://github.com/1ven/firestone-css#readme",
+  "devDependencies": {
+    "webpack": "^2.3.2"
+  }
 }
