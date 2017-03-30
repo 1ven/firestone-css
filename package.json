@@ -5,8 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "build": "npm run check && gulp build",
-    "check": "gulp lint"
+    "check": "gulp lint",
+    "build": "gulp build",
+    "preversion": "npm run check",
+    "postversion": "git push && git push --tags && npm publish",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
