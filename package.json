@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "UI components CSS kit",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,12 @@
   },
   "homepage": "https://github.com/1ven/firestone-css#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-ejs": "^3.0.0",
+    "gulp-sass": "^3.1.0",
     "webpack": "^2.3.2"
   }
 }
