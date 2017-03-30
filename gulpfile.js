@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var ejs = require('gulp-ejs');
+var postcss = require('gulp-postcss');
 var clean = require('gulp-clean');
+var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 
 gulp.task('dev', ['sass:dev', 'ejs:dev'], function() {
@@ -16,6 +18,9 @@ gulp.task('dev', ['sass:dev', 'ejs:dev'], function() {
 gulp.task('sass:dev', function() {
   return gulp.src('./src/index.scss')
     .pipe(sass())
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
     .pipe(gulp.dest('./.gulp-temp'))
     .pipe(browserSync.stream());
 });

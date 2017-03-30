@@ -24,11 +24,13 @@
   },
   "homepage": "https://github.com/1ven/firestone-css#readme",
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-connect": "^5.0.0",
     "gulp-ejs": "^3.0.0",
+    "gulp-postcss": "^6.4.0",
     "gulp-sass": "^3.1.0",
     "webpack": "^2.3.2"
   }
