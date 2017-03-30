@@ -34,17 +34,18 @@ gulp.task('ejs:dev', function() {
     .pipe(gulp.dest('./.gulp-temp'));
 });
 
+gulp.task('clean:dev', function() {
+  return gulp.src('./.gulp-temp', { read: false })
+    .pipe(clean());
+});
+
 gulp.task('lint', function() {
   return gulp.src('./src/**/*.scss')
     .pipe(sassLint())
     .pipe(sassLint.format())
 });
 
-gulp.task('clean', function() {
-  return gulp.src('./.gulp-temp', { read: false })
-    .pipe(clean());
-});
 
-gulp.task('default', ['clean'], function() {
+gulp.task('default', ['clean:dev'], function() {
   return gulp.start('dev');
 });

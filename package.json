@@ -4,8 +4,7 @@
   "description": "UI components CSS kit",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
-    "lint": "gulp lint"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
